@@ -1,0 +1,107 @@
+/* ==========RESET========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========MOBILE (par défaut)========== */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: bisque;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero button {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.footer {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* ==========TABLETTE (par supérieur ou égale à 768px)========== */
+@media (min-width:768px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 170px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* ==========DESKTOP (supérieur ou égale à 1024px)============ */
+@media (min-width: 1024px) {
+    .body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+}
